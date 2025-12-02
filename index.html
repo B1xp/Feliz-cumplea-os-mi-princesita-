@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños mi Princesita💛</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" 
+        rel="stylesheet">
+        <link rel="icon" href="." type="image/jpg">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 class="typewriter" id="typewriter">Feliz cumpleaños mi Princesita💛</h1>
+                <p class="subtitle fade-in">Hoy es el día en el que la personita más especial del mundo nació</p>
+                <div class="floating-hearts">
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                    <div class="heart">💛</div>
+                </div>
+                <button class="cta-button" onclick="scrollAndDisappear('gallery')">
+                    Un poquito de tus primeros días junto a tu niñíto.
+                </button>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scoll-arrow"></div>
+            </div>
+        </section>
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <h2 class="section-title">Nuestras primeras fotos juntitos mi pequeñita</h2>
+                <div class="gallery-grid">
+                    <div class="photo-card" data-aos="fade-up" data-delay="100">
+                        <div class="photo-container">
+                            <img src="../PJ AA/Photos/IMG_1632.jpg" 
+                            alt="1">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Me encanta esa conexión que teníamos desde el primer momento mi niña</div>
+                                <button class="like-btn" onclick="toggleLike(this)">
+                                    <span class="heart-icon">💛</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card" data-aos="fade-up" data-delay="200">
+                        <div class="photo-container">
+                            <img src="../PJ AA/Photos/IMG_1730.jpg" 
+                            alt="2">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">La primera vez que viniste a mi casita</div>
+                                <button class="like-btn" onclick="toggleLike(this)">
+                                    <span class="heart-icon ">💛</span> 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card" data-aos="fade-up" data-delay="300">
+                        <div class="photo-container">
+                            <img src="../PJ AA/Photos/FullSizeRender.jpg" 
+                            alt="3">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Nuestro besito, y en el lugar y el momento de la primera fotito que subimos juntos</div>
+                                <button class="like-btn" onclick="toggleLike(this)">
+                                    <span class="heart-icon">💛</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card" data-aos="fade-up" data-delay="400">
+                        <div class="photo-container">
+                            <img src="../PJ AA/Photos/cf8640ec-fb96-4d5b-b6f0-706ed291c2f0.jpg" 
+                            alt="4">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">En nuestro viajecito a Granada, me encantaría ir de nuevo pero,
+                                     solo tu y yo mi vida y esquiar juntitos</div>
+                                <button class="like-btn" onclick="toggleLike(this)">
+                                    <span class="heart-icon">💛</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card" data-aos="fade-up" data-delay="500">
+                        <div class="photo-container">
+                            <img src="../PJ AA/Photos/8d165dbb-2841-463e-9d0e-9830c5bcf204.jpg" 
+                            alt="5">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Me encanta esa sonrisilla gordi, con tus brackecitos super mona</div>
+                                <button class="like-btn" onclick="toggleLike(this)">
+                                    <span class="heart-icon">💛</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card" data-aos="fade-up" data-delay="600">
+                        <div class="photo-container">
+                            <img src="../PJ AA/Photos/IMG_2306.jpg" 
+                            alt="6">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Me encantas, gordi me acuerdo de lo bien que nos lo pasabamos mi niñita</div>
+                                <button class="like-btn" onclick="toggleLike(this)">
+                                    <span class="heart-icon">💛</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>                                   
+                </div>
+                <button id="openGallery2Btn" class="cta-button" onclick="openGallery2Modal()" style="margin-top: 50px; display: block; margin-left: auto; margin-right: auto;">
+                    Más momentos especiales juntos mi vida 💛
+                </button>
+            </div>
+        </section>
+
+        <div id="gallery2Modal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeGallery2Modal()">
+                    <span class="close-arrow">← Atrás</span>
+                </button>
+                <div class="modal-gallery">
+                    <h2 class="section-title">Más de nuestras fotitos que tendremos infinitas mi pequeñita</h2>
+                    <div class="gallery-grid">
+                        <div class="photo-card" data-aos="fade-up" data-delay="100">
+                            <div class="photo-container">
+                                <img src="Photos\i6.jpg" 
+                                alt="1">
+                                <div class="photo-overlay">
+                                    <div class="photo-caption">Que mona mi gordi, necesito mas fotitos joe mi niña</div>
+                                    <button class="like-btn" onclick="toggleLike(this)">
+                                        <span class="heart-icon">💛</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-card" data-aos="fade-up" data-delay="200">
+                            <div class="photo-container">
+                                <img src="Photos\i5.jpg" 
+                                alt="2">
+                                <div class="photo-overlay">
+                                    <div class="photo-caption">Mira gordi mi A, y yo me hice la tuyita en el pelito</div>
+                                    <button class="like-btn" onclick="toggleLike(this)">
+                                        <span class="heart-icon">💛</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-card" data-aos="fade-up" data-delay="300">
+                            <div class="photo-container">
+                                <img src="Photos\i4.jpg" 
+                                alt="3">
+                                <div class="photo-overlay">
+                                    <div class="photo-caption">Que ganas tengo gordi de verano, y llevarme todo el día contigo</div>
+                                    <button class="like-btn" onclick="toggleLike(this)">
+                                        <span class="heart-icon">💛</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-card" data-aos="fade-up" data-delay="400">
+                            <div class="photo-container">
+                                <img src="Photos\i3.jpg" 
+                                alt="4">
+                                <div class="photo-overlay">
+                                    <div class="photo-caption">Mira mi niña uno de los besitos que nos daremos durante toda la vida</div>
+                                    <button class="like-btn" onclick="toggleLike(this)">
+                                        <span class="heart-icon">💛</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-card" data-aos="fade-up" data-delay="500">
+                            <div class="photo-container">
+                                <img src="Photos\i2.jpg"
+                                alt="5">
+                                <div class="photo-overlay">
+                                    <div class="photo-caption">Que mal salia yo gordi, pero a mi me encanta como sales y con tu topcito</div>
+                                    <button class="like-btn" onclick="toggleLike(this)">
+                                        <span class="heart-icon">💛</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-card" data-aos="fade-up" data-delay="600">
+                            <div class="photo-container">
+                                <img src="Photos\i1.jpg" 
+                                alt="6">
+                                <div class="photo-overlay">
+                                    <div class="photo-caption">La foto mas feliz de mi vida gordi, creo que si no es la mejor de las mejores, nunca habra un dia igual</div>
+                                    <button class="like-btn" onclick="toggleLike(this)">
+                                        <span class="heart-icon">💛</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                                   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="message-section" id="message">
+            <div class="container">
+                <div class="message-card">
+                    <h2 class="message-title">Para la reina del mundo, hecho con todo mi corazoncito💛</h2>
+                    <div class="message-content">
+                        <p class="message-text fade-in">
+                            Hoy es el dia especial, en el que la niña mas bonita del mundo nació, y la felicitaré de la manera más especial que esté 
+                            a mi alcance cada uno del resto de sus cumpleaños, nunca más tendrás un cumpleaños en el que no haya regalitos mios o detallitos
+                            o cartitas, o cositas super especiales. Siempre recuerda que tu niño nunca se va a ir y va a estar a tu lado durante toda tu vidita 
+                            e incluso después de ella porque nunca nos separaremos incluso después de la vida, en lo que haya seguiremos juntos o te encontraré 
+                            de nuevo mi vida como aquel dia tan bonito en el que por suerte nuestras miradas conectaron en el dentista de mi pueblo. Mi niña, 
+                            eres la mejor de verdad te lo digo que no hay nadie en el mundo que se pueda nisiquiera comparar al amor de mi vida, porque es tan 
+                             inigualable, es tan increible, que es inposible describir todo lo que eres de tanto que se que eres, necesitaría todos los árboles del 
+                            mundo para nisiquiera expresar una pequeñísima porción de todo lo que eres. y ya si tubiese que expresar lo mucho que te quiero no 
+                            habría nisiquiera espacio en todo el universo que consiga compararse un porquito porque cada dia te quiero mas mi Ana.
+                        </p>
+                        <p class="message-text fade-in">
+                            Te lo digo desde el fondo de mi corazoncito mi princestia, te quiero, te amo, y es tanto que de verdad no es nisiquiera expresable con el 
+                            infinito, me faltan infinitos, me faltan universos, me falta lugar y numeros para aproximarse a una miseria de lo que te quiero, porque 
+                            haces de mi el niño mas feliz del mundo mi vida, de verdad que no hay nada ni nadie que me haga tan feliz como tu lo haces, es totalmente 
+                            increible como solo con verte la carita tan preciosa que tienes, algo hace click en mi y dice por qué me enfado? con esta personita que me 
+                            encanta y que me tiene loco, lo siento mi niña por toditas esas veces que se enfada tu niñito, pero él intenta aprender y no volver a hacerlo
+                            porque lo único que quiere para tí es lo mejor y solo lo mejor, cada día trabaja lo mas duro que puede para hacer todo lo que te promete 
+                            realidad y para hacer de ti la mas feliz en el mundito, y que siempre estes con una sonrisa de oreja a oreja, haría y haré cualquier pero de
+                            verdad que cualquier cosa por ti para ti o lo que necesites en cualquier momento por que nunca me iré, siempre a tu lado mi angelito.
+                        </p>
+                        <p>
+                            Eres la mejor mi pequeñita, no sabes lo orgulloso que esta de ti la personita que te acompañará toda tu vidita, no lo sabes realmente todo lo
+                            que él confia en ti, lo hace con toda su alma y cuerpo, ya que confiaría hasta su vida si fuese necesario, pero lo que siempre protegerá y nunca 
+                            pondrá por atrás de si mismo es tu vida, porque sin ti no existe Ale, sin tí para mi el mundo seria una estancia vacía y oscura en la que no me 
+                            merece la pena estar, y necesitaría estar contigo porque te necesito ana y de verdad no se que sería de esta personita sin el amor de su vida que 
+                            le demuestra día a día todo lo que le quiere y le ama y él intenta hacer lo mismo por ella, porque siempre lo hará, confio en mi niña y en que 
+                            nunca se irá, porque en mi siempre tendrás tu casa y siempre tendrás un hombro donde apoyarte para llorar o reir o incluso rabiar, si es necesario.
+                            Yo estaré siempre a tu lado para lo que me necesites, y cuando estés mal, o te sientas mal o algo no te haya salido tal y como lo esperabas, tu niño 
+                            estará ahi apoyandote, animandote y alegrandote para que te propongas nuevas metas más ambiciosas, porque él sabe que puedes conseguir todo lo que 
+                            te propongas, y siempre estará ahi, te animará y celebrareis juntos todas tus victorias, siempre juntos mi Princesita.
+                            Felicidades, mi guapa💛
+                        </p>
+                    </div>
+                    <div class="message-hearts">
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                        <span class="heart-animation">💛</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>De tu niñito, con toda su alma y su corazoncito para lo que más quiere en el mundito mundial💛</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Audio element and floating control -->
+    <audio id="bgAudio" src="Photos\Mora - MEDIA LUNA (Visualizer) _ ESTRELLA.mp3" loop preload="auto" playsinline></audio>
+
+    <div id="audioControl" class="audio-control" aria-label="Audio controls">
+        <button id="audioPlayPause" class="audio-btn" title="Play/Pause" aria-pressed="false">▶️</button>
+        <span class="volume-icon">🔊</span>
+        <input id="audioVolume" class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.6" aria-label="Volume" />
+    </div>
+
+</body>
+
+</html>
